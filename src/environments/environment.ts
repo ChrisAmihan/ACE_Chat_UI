@@ -3,7 +3,38 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  //user
+  login:'http://localhost:8080/user/login',
+  newAccount:'http://localhost:8080/user/newaccount',
+  updateAccount:'http://localhost:8080/user/updateaccount',
+  searchUsers:'http://localhost:8080/user/searchusers',
+  getallUsers:'http://localhost:8080/user/getall',
+  getoneUser:'http://localhost:8080/user/getone',
+
+  //friend
+  friendRequest:'http://localhost:8080/friend/request',
+  requestUpdate:'http://localhost:8080/friend/requestupdate',
+  deleteFriend:'http://localhost:8080/friend/deletefriend',
+  getAllFriends:'http://localhost:8080/friend/getall',
+
+  //chat
+  newChat:'http://localhost:8080/chat/newchat',
+  deleteChat:'http://localhost:8080/chat/deletechat',
+  muteChat:'http://localhost:8080/chat/mutestatus',
+  getAllChats:'http://localhost:8080/chat/getallchats',
+  searchChats:'http://localhost:8080/chat/searchchats',
+  getGroups:'http://localhost:8080/chat/getgroupname',
+
+  //chatlog
+  message:'http://localhost:8080/chatlog/newmessage',
+  getChats:'http://localhost:8080/chatlog/getallchatlogs',
+  notifications:'http://localhost:8080/chatlog/notification',
+
+  //block
+  block:'http://localhost:8080/block/block',
+  unblock:'http://localhost:8080/block/unblock',
+  getblock:'http://localhost:8080/block/getblocks'
 };
 
 /*
