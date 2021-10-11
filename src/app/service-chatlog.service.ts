@@ -15,7 +15,7 @@ export class ServicechatlogService {
   };
 
   message(chatlog:Chatlog){
-    this.httpClient.post(environment.message, chatlog,this.httpOptions);
+    return this.httpClient.post(environment.message, chatlog,this.httpOptions);
   }
 
   getChats(chatlog:Chatlog):Observable<Chatlog[]>{

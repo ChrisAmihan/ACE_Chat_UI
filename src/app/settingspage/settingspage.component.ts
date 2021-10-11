@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthenticationService } from '../authentication.service';
 
 @Component({
   selector: 'app-settingspage',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SettingspageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private authen: AuthenticationService) { }
 
   ngOnInit(): void {
+    this.authen.authenticate();
   }
 
 }

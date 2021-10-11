@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthenticationService } from '../authentication.service';
 
 @Component({
   selector: 'app-messagespage',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MessagespageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private authen: AuthenticationService) { }
 
   ngOnInit(): void {
+    this.authen.authenticate();
   }
 
 }

@@ -18,17 +18,18 @@ export class ServiceUserService {
 
 
   login(user:User):Observable<User>{
-    return this.httpClient.post<User>(environment.login, user, this.httpOptions) as Observable<User>;
+    return this.httpClient.post<any>(environment.login, user, this.httpOptions) as Observable<User>;
   }
 
 
   newAccount(user:User){
-    this.httpClient.post<User>(environment.newAccount, user, this.httpOptions);
+    console.log(user)
+    return this.httpClient.post<any>(environment.newAccount, user);
   }
 
 
   updateAccount(user:User){
-    this.httpClient.post<User>(environment.updateAccount, user, this.httpOptions);
+    return this.httpClient.post<User>(environment.updateAccount, user, this.httpOptions);
   }
 
 

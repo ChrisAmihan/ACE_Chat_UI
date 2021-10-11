@@ -1,19 +1,19 @@
 <div class="new-user-container">
     <form>
         <div>
-            <input type="text" placeholder="Username" required name="Username" />
+            <input [(ngModel)]="user.username" type="text" placeholder="Username" required name="Username" />
         </div>
         <div>
-            <input type="text" placeholder="Name" required name="Name" />
+            <input [(ngModel)]="user.name" type="text" placeholder="Name" required name="Name" />
         </div>
         <div>
-            <input type="text" placeholder="Password" required name="Password" />
+            <input [(ngModel)]="user.password" type="text" placeholder="Password" required name="Password" />
         </div>
         <div>
-            <input type="url" placeholder="Profile_Pic" name="Profile_Pic" />
+            <input [(ngModel)]="user.profilepic" type="url" placeholder="Profile_Pic" name="Profile_Pic" />
         </div>
         <div>
-            <input type="submit" value="Create Account" required/>
+            <input (click)="newAccount()" type="submit" value="Create Account" required/>
         </div>
     </form>
 </div>

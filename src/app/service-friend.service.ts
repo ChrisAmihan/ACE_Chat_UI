@@ -16,17 +16,17 @@ export class ServicefriendService {
 
 
   friendRequest(friend:Friend){
-    this.httpClient.post(environment.friendRequest, friend, this.httpOptions);
+    return this.httpClient.post(environment.friendRequest, friend, this.httpOptions);
   }
 
 
   requestUpdate(friend:Friend){
-    this.httpClient.post(environment.requestUpdate, friend, this.httpOptions);
+    return this.httpClient.post(environment.requestUpdate, friend, this.httpOptions);
   }
 
 
   deleteFriend(friend:Friend){
-    this.httpClient.post(environment.deleteFriend, friend, this.httpOptions);
+    return this.httpClient.post(environment.deleteFriend, friend, this.httpOptions);
   }
 
   

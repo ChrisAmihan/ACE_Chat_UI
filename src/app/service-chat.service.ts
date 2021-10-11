@@ -16,15 +16,15 @@ export class ServicechatService {
 
 
   newChat(chat:Chat){
-    this.httpClient.post(environment.newChat,chat,this.httpOptions);
+    return this.httpClient.post(environment.newChat,chat,this.httpOptions);
   }
 
   deleteChat(chat:Chat){
-    this.httpClient.post(environment.deleteChat,chat,this.httpOptions);
+    return this.httpClient.post(environment.deleteChat,chat,this.httpOptions);
   }
 
   muteChat(chat:Chat){
-    this.httpClient.post(environment.muteChat,chat, this.httpOptions);
+    return this.httpClient.post(environment.muteChat,chat, this.httpOptions);
   }
 
   getAllChats(chat:Chat):Observable<Chat[]>{

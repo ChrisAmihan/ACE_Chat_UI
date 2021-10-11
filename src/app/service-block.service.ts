@@ -15,11 +15,11 @@ export class ServiceblockService {
   };
 
   block(block:Block){
-    this.httpClient.post(environment.block,block,this.httpOptions);
+    return this.httpClient.post(environment.block,block,this.httpOptions);
   }
 
   unblock(block:Block){
-    this.httpClient.post(environment.unblock, block, this.httpOptions);
+    return this.httpClient.post(environment.unblock, block, this.httpOptions);
   }
 
   getblock(block:Block):Observable<Block[]>{

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ServiceUserService } from '../service-user.service';
+import { User } from '../User';
 
 @Component({
   selector: 'app-new-user',
@@ -7,9 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewUserComponent implements OnInit {
 
-  constructor() { }
 
   ngOnInit(): void {
   }
 
+  constructor(private userService:ServiceUserService, private route : Router) { }
+
+
+  user:User = new User("","",0,"","");
+  
+  newAccount(){
+    let user = new User(this.user.username,this.user.password,0,this.user.name,this.user.profilepic);
+    this.userService.newAccount(user).subscribe(res =>{
+      this.route.navigate(['/login']);
+    })
+    console.log(user)
+  }
 }
