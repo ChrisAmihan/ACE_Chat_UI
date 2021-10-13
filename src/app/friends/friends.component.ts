@@ -1,4 +1,6 @@
+import { useAnimation } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
+import { User } from '../User';
 
 @Component({
   selector: 'app-friends',
@@ -10,6 +12,6 @@ export class FriendsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  }
+  } 
 
 }

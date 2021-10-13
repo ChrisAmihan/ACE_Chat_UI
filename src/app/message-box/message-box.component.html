@@ -1,1 +1,2 @@
-<p>message-box works!</p>
+<input id="message" [(ngModel)]="chatlog.message" type="text" placeholder="message" name="message" />
+<input onclick="document.getElementById('message').value=''" (click)="sendmessage()" type="submit" value="Send" required/>

@@ -41,5 +41,9 @@ export class ServiceUserService {
   getoneUser(user:User):Observable<User>{
     return this.httpClient.post(environment.getoneUser,user,this.httpOptions) as Observable<User>
   }
+
+  search(user:User):Observable<User[]>{
+      return this.httpClient.post(environment.searchUsers,user,this.httpOptions)as Observable<User[]>
+  }
   
 }

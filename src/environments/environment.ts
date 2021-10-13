@@ -25,11 +25,11 @@ export const environment = {
   getAllChats:'http://localhost:8080/chat/getallchats',
   searchChats:'http://localhost:8080/chat/searchchats',
   getGroups:'http://localhost:8080/chat/getgroupname',
+  getone:'http://localhost:8080/chat/getone',
 
   //chatlog
   message:'http://localhost:8080/chatlog/newmessage',
   getChats:'http://localhost:8080/chatlog/getallchatlogs',
-  notifications:'http://localhost:8080/chatlog/notification',
 
   //block
   block:'http://localhost:8080/block/block',

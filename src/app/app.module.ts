@@ -19,6 +19,9 @@ import { FriendsComponent } from './friends/friends.component';
 import { CookieService } from 'ngx-cookie-service';
 import { HttpClientModule } from '@angular/common/http';
 import { NotificationsComponent } from './notifications/notifications.component';
+import { NewmessageComponent } from './newmessage/newmessage.component';
+import { NewmessagepageComponent } from './newmessagepage/newmessagepage.component';
+
 
 @NgModule({
   declarations: [
@@ -37,6 +40,8 @@ import { NotificationsComponent } from './notifications/notifications.component'
     SettingsComponent,
     FriendsComponent,
     NotificationsComponent,
+    NewmessageComponent,
+    NewmessagepageComponent,
     
   ],
   imports: [

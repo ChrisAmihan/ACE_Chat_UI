@@ -6,6 +6,7 @@ import { NewUserComponent } from './new-user/new-user.component';
 import { SettingspageComponent } from './settingspage/settingspage.component';
 import { FriendspageComponent } from './friendspage/friendspage.component';
 import { MessagespageComponent } from './messagespage/messagespage.component';
+import { NewmessagepageComponent } from './newmessagepage/newmessagepage.component';
 
 const routes: Routes = [
   {path:'', redirectTo: "login", pathMatch:"full"},
@@ -14,7 +15,8 @@ const routes: Routes = [
   {path:"new-user", component:NewUserComponent},
   {path:"settings", component:SettingspageComponent},
   {path:"friends", component:FriendspageComponent},
-  {path:"messages/:id", component:MessagespageComponent}
+  {path:"messages/:id", component:MessagespageComponent},
+  {path:"newmessage", component:NewmessagepageComponent}
 ];
 
 @NgModule({

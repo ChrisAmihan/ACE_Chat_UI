@@ -1,1 +1,15 @@
-<p>settings works!</p>
+<p>Settings</p>
+<div>
+    <p>Update your Profile Picture</p>
+    <input [(ngModel)]="user.profilepic" type="text" placeholder="profilepic" name="profilepic" required />
+    <input (click)="updateprofilepic()" type="submit" value="update" required/>
+
+</div>
+
+<div>
+    <p>Update your Password and Name</p>
+    <input [(ngModel)]="user2.name" type="text" placeholder="name" name="name" required/>
+    <input [(ngModel)]="user2.password" type="text" placeholder="password" name="password" required/>
+    <input (click)="update()" type="submit" value="update" required/>
+
+</div>

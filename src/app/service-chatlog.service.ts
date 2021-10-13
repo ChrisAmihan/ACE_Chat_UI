@@ -22,7 +22,5 @@ export class ServicechatlogService {
     return this.httpClient.post(environment.getChats,chatlog,this.httpOptions) as Observable<Chatlog[]>
   }
 
-  notifications(chatlog:Chatlog):Observable<boolean>{
-    return this.httpClient.post(environment.notifications,chatlog,this.httpOptions) as Observable<boolean>;
-  }
+ 
 }

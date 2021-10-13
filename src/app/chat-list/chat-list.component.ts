@@ -13,11 +13,9 @@ import { User } from '../User';
 export class ChatListComponent implements OnInit {
 
   constructor(private route : Router, private cookie:CookieService,private chatService:ServicechatService) { }
-  showing:boolean = true;
   currentterm:String="";
 
   ngOnInit(): void {
-    //call delete block chats
     this.chatsearch(this.currentterm);
     setTimeout(() => { this.ngOnInit() }, 10000);
   }
@@ -42,16 +40,14 @@ export class ChatListComponent implements OnInit {
   }
 
   mute(chat:Chat){
-    
-    let chatstatus = new Chat(chat.chatid, chat.user, chat.groupname,"") 
+    let chatstatus = new Chat(chat.chatid, chat.userid, chat.groupname,"") 
     if(chat.status == "unmuted"){
-      chatstatus = new Chat(chat.chatid, chat.user, chat.groupname,"muted") 
+      chatstatus = new Chat(chat.chatid, chat.userid, chat.groupname,"muted") 
     }else{
-      chatstatus = new Chat(chat.chatid, chat.user, chat.groupname,"unmuted") 
+      chatstatus = new Chat(chat.chatid, chat.userid, chat.groupname,"unmuted") 
     }
     this.chatService.muteChat(chatstatus).subscribe();
   }
 
-  //add a function that will delete chat if the person you are chating with is blocked
 
 }

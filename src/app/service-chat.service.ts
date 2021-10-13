@@ -39,4 +39,8 @@ export class ServicechatService {
   getGroups(chat:Chat):Observable<Chat[]>{
     return this.httpClient.post(environment.getGroups,chat,this.httpOptions) as Observable<Chat[]>
   }
+
+  getOne(chat:Chat):Observable<Chat>{
+    return this.httpClient.post(environment.getone,chat,this.httpOptions)as Observable<Chat>
+  }
 }
