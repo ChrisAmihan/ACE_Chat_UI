@@ -14,7 +14,7 @@ const routes: Routes = [
   {path:"new-user", component:NewUserComponent},
   {path:"settings", component:SettingspageComponent},
   {path:"friends", component:FriendspageComponent},
-  {path:"messages", component:MessagespageComponent}
+  {path:"messages/:id", component:MessagespageComponent}
 ];
 
 @NgModule({

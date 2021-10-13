@@ -1,1 +1,23 @@
-<p>chat-list works!</p>
+<button> New Chat </button>
+<!--add some kind of popup window to make a new message-->
+
+<div>
+    <label for="chat-Search"> Search Chats</label>
+    <input #chatSearch type="text" (input)="chatsearch(chatSearch.value)">
+
+
+
+    <div>
+        <p></p>
+        <p></p>
+    </div>
+    <div *ngIf="showing">
+        <ul *ngFor="let chat of chatarr ">
+            <a routerLink="/messages/{{chat.chatid}}">
+                <span>{{chat.groupname}}</span>
+            </a>
+            <button (click)="mute(chat)"> Mute </button>
+            <button (click)="delete(chat.chatid)"> Delete </button>
+        </ul>
+    </div>
+</div>

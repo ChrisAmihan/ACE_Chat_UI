@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders} from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Chat } from './Chat';
 import { environment } from 'src/environments/environment';
+import { User } from './User';
 
 @Injectable({
   providedIn: 'root'
@@ -27,12 +28,12 @@ export class ServicechatService {
     return this.httpClient.post(environment.muteChat,chat, this.httpOptions);
   }
 
-  getAllChats(chat:Chat):Observable<Chat[]>{
+  getAllChats(chat:User):Observable<Chat[]>{
     return this.httpClient.post(environment.getAllChats,chat,this.httpOptions) as Observable<Chat[]>
   }
 
-  searchChats(chat:Chat):Observable<Chat[]>{
-    return this.httpClient.post(environment.searchChats,chat,this.httpOptions) as Observable<Chat[]>
+  searchChats(user:User):Observable<Chat[]>{
+    return this.httpClient.post(environment.searchChats,user,this.httpOptions) as Observable<Chat[]>
   }
 
   getGroups(chat:Chat):Observable<Chat[]>{

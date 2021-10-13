@@ -18,6 +18,8 @@ import { SettingsComponent } from './settings/settings.component';
 import { FriendsComponent } from './friends/friends.component';
 import { CookieService } from 'ngx-cookie-service';
 import { HttpClientModule } from '@angular/common/http';
+import { NotificationsComponent } from './notifications/notifications.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,13 +35,15 @@ import { HttpClientModule } from '@angular/common/http';
     MessagespageComponent,
     SettingspageComponent,
     SettingsComponent,
-    FriendsComponent
+    FriendsComponent,
+    NotificationsComponent,
+    
   ],
   imports: [
     FormsModule,
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [
     CookieService
