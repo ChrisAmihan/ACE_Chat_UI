@@ -17,9 +17,11 @@ export class ChatListComponent implements OnInit {
   currentterm:String="";
 
   ngOnInit(): void {
+    //call delete block chats
     this.chatsearch(this.currentterm);
     setTimeout(() => { this.ngOnInit() }, 10000);
   }
+  
 
   chatarr:Chat[] = []
   user:User = new User("","",0,"","");
@@ -49,5 +51,7 @@ export class ChatListComponent implements OnInit {
     }
     this.chatService.muteChat(chatstatus).subscribe();
   }
+
+  //add a function that will delete chat if the person you are chating with is blocked
 
 }
