@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import { NewUserComponent } from './new-user/new-user.component';
 import { LoginComponent } from './login/login.component';
@@ -21,13 +20,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { NewmessageComponent } from './newmessage/newmessage.component';
 import { NewmessagepageComponent } from './newmessagepage/newmessagepage.component';
+import { AllfriendsComponent } from './allfriends/allfriends.component';
+import { PendingfriendsComponent } from './pendingfriends/pendingfriends.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ContentComponent,
     FooterComponent,
     NewUserComponent,
     LoginComponent,
@@ -42,6 +42,8 @@ import { NewmessagepageComponent } from './newmessagepage/newmessagepage.compone
     NotificationsComponent,
     NewmessageComponent,
     NewmessagepageComponent,
+    AllfriendsComponent,
+    PendingfriendsComponent,
     
   ],
   imports: [

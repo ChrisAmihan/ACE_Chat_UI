@@ -1,14 +1,41 @@
-<div class="container-fluid">
+<div class="container">
     <div class="row">
-        <div id="leftpane-id" class="col-2 leftpane m-3">
-            <div>
-                <app-chat-list></app-chat-list>
+        <div class="col-2">
+
+        </div>
+        <div class="col -2">
+            <span id="allUser" class=tab (click)="displayAllUsers()">All</span>
+            <span id="pendFriend" class=tab (click)="findPendingFriends()">Pending</span>
+            <span id="approveFriend" class=tab (click)="findApprovedFriends()">Approved</span>
+        </div>
+
+    </div>
+    <div id="spanDiv">
+
+
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div id="leftpane-id" class="col-2 leftpane m-3">
+                <div>
+                    <app-chat-list></app-chat-list>
+                </div>
             </div>
-        </div>
-        <div class="col-8 main-content">
-            <app-friends></app-friends>
-        </div>
-        <div class="col-1 rightpane m-3">
-            <app-notifications></app-notifications>
+            <div class="col-8 main-content" id="friendslist">
+
+                <div *ngIf="all">
+                    <app-friends *ngFor="let u of allUsers" [user]="u"></app-friends>
+                </div>
+                <div *ngIf="approved">
+                    <app-allfriends *ngFor="let a of approvedFriends" [friend]="a"></app-allfriends>
+                </div>
+                <div *ngIf="pending">
+                    <app-pendingfriends *ngFor="let p of pendingFriends" [friend]="p"></app-pendingfriends>
+                </div>
+
+            </div>
+            <div class="col-1 rightpane m-3">
+
+            </div>
         </div>
     </div>
