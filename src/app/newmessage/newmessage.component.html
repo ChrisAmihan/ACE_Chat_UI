@@ -4,13 +4,14 @@
 <!-- redo -->
 <div>
     <p *ngFor="let c of ch">
-        <span>{{c.profilepic}}  </span>
-        <span>  {{c.name}}</span>
+
+        <img src="{{c.profilepic}}">
+        <span> {{c.name}}</span>
     </p>
-    <input #searchusers id="addperson" (input)="search(searchusers.value)" type="text" placeholder="Name" name="name" />
+    <input #searchusers id="addperson" (input)="search(searchusers.value)" type="text " placeholder="Name " name="name " />
     <div>
-        <ul *ngFor="let user of userarr">
-            <span onclick="document.getElementById('addperson').value=''" (click)=adduser(user)>{{user.name}}</span>
+        <ul *ngFor="let user of userarr ">
+            <span onclick="document.getElementById('addperson').value='' " (click)=adduser(user)>{{user.name}}</span>
         </ul>
     </div>
 </div>

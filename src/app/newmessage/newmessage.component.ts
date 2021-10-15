@@ -34,7 +34,6 @@ export class NewmessageComponent implements OnInit {
     }
   }
   search(name:String){
-    
     let user2 = new User("","",0,name,"");
       this.userService.search(user2).subscribe((data)=>{
       this.userarr=data
@@ -44,5 +43,6 @@ export class NewmessageComponent implements OnInit {
   adduser(user:User){
     this.ch[this.test]=user;
     this.test++;
+    this.userarr =[];
   }
 }
