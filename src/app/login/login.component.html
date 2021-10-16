@@ -1,19 +1,16 @@
 <div class="login-container m-2">
     <form id="login_form">
-        <div id="username-box" method="POST" action="">
+        <div method="POST" action="">
             <div>
-                <input [(ngModel)]="user.username" type="text" placeholder="Username" name="username" />
+                <input id="username-box" [(ngModel)]="user.username" type="text" placeholder="Username" name="username" />
             </div>
             <div>
-                <input [(ngModel)]="user.password" type="password" placeholder="Password" required name="Password" />
+                <input id="password-box" [(ngModel)]="user.password" type="password" placeholder="Password" required name="Password" />
             </div>
-            <input (click)="login()" type="submit" value="Login Button" required/>
+            <input id="login-button" (click)="login()" type="submit" value="Login Button" required/>
         </div>
     </form>
     <nav>
-        <a routerLink="/content"> Main Content </a>
-    </nav>
-    <nav>
-        <a routerLink="/new-user"> Create Account </a>
+        <a id="create-account-link" routerLink="/new-user"> Create Account </a>
     </nav>
 </div>

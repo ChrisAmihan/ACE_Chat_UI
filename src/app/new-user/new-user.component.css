@@ -1,3 +1,29 @@
 .new-user-container{
     text-align:center;
 }
+
+.main-content {
+    background-color:#65247F;
+    margin: 1em 0px;
+    border-style:ridge;
+    padding: 20px;
+    border-radius: 5px;
+    min-height:500px;
+}
+
+.nested-container {
+    background-color: white;
+    min-height: 500px;
+}
+
+.message-box {
+    background-color: white;
+}
+
+.container-fluid{
+    background-color:#50026E;
+    min-width: auto;
+    min-height:auto;
+    width: auto;
+    height: auto;
+}

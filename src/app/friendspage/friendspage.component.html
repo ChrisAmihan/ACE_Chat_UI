@@ -1,17 +1,16 @@
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div class="col-2">
 
         </div>
         <div class="col -2">
-            <span id="allUser" class=tab (click)="displayAllUsers()">All</span>
-            <span id="pendFriend" class=tab (click)="findPendingFriends()">Pending</span>
-            <span id="approveFriend" class=tab (click)="findApprovedFriends()">Approved</span>
+            <span id="all-users-tab" class="tab" (click)="displayAllUsers()">All</span>
+            <span id="pending-friends-tab" class="tab" (click)="findPendingFriends()">Pending</span>
+            <span id="approved-friends-tab" class="tab" (click)="findApprovedFriends()">Approved</span>
         </div>
 
     </div>
     <div id="spanDiv">
-
 
     </div>
     <div class="container-fluid">
@@ -21,7 +20,7 @@
                     <app-chat-list></app-chat-list>
                 </div>
             </div>
-            <div class="col-8 main-content" id="friendslist">
+            <div class="col-8 main-content" id="friends-list">
 
                 <div *ngIf="all">
                     <app-friends *ngFor="let u of allUsers" [user]="u"></app-friends>

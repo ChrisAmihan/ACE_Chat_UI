@@ -4,9 +4,7 @@
             <img src="{{friend.requesterid.profilepic}}">
             <div class="card">
                 <div class="card-title">{{friend.requesterid.name}}</div>
-                <div class="card-desc"> <input type="button" value="Block" (click)="blockUser()"></div>
-
-
+                <div class="card-desc"><input id="block-{{friend.requesterid.name}}-button" type="button" value="Block" (click)="blockUser()"></div>
             </div>
         </div>
     </div>

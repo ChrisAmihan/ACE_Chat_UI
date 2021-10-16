@@ -1,20 +1,20 @@
-<a routerLink="/newmessage">
+<a id="new-chat-link" routerLink="/newmessage">
     <span>New Chat</span>
 </a>
 <!--add some kind of popup window to make a new message-->
 
 <div>
-    <label for="chat-Search"> Search Chats</label>
-    <input #chatSearch type="text" (input)="chatsearch(chatSearch.value)">
+    <label for="chat-Search">Search Chats</label>
+    <input id="chat-search-box" #chatSearch type="text" (input)="chatsearch(chatSearch.value)">
 
     <div id=scroll>
         <div>
             <ul *ngFor="let chat of chatarr">
-                <a routerLink="/messages/{{chat.chatid}}">
+                <a  id="chat-{{chat.chatid}}" routerLink="/messages/{{chat.chatid}}">
                     <span>{{chat.groupname}}</span>
                 </a>
-                <button (click)="mute(chat)"> Mute </button>
-                <button (click)="delete(chat.chatid)"> Delete </button>
+                <button id="mute-button-{{chat.chatid}}" (click)="mute(chat)"> Mute </button>
+                <button id="delete-button-{{chat.chatid}}" (click)="delete(chat.chatid)"> Delete </button>
             </ul>
         </div>
     </div>
