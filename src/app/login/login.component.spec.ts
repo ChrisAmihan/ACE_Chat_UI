@@ -22,4 +22,12 @@ describe('LoginComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should login', () => {
+    component.user.userid=1
+    component.user.username='test'
+    component.user.password='test'
+    expect(component.user.userid).toBe(1);
+  });
+
 });

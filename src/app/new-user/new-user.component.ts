@@ -24,6 +24,5 @@ export class NewUserComponent implements OnInit {
     this.userService.newAccount(user).subscribe(res =>{
       this.route.navigate(['/login']);
     })
-    console.log(user)
   }
 }

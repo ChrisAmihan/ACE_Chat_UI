@@ -1,14 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { HttpClientTestingModule } from '@angular/common/http/testing'
 import { NewmessagepageComponent } from './newmessagepage.component';
 
-describe('NewmessagepageComponent', () => {
+xdescribe('NewmessagepageComponent', () => {
   let component: NewmessagepageComponent;
   let fixture: ComponentFixture<NewmessagepageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NewmessagepageComponent ]
+      declarations: [ NewmessagepageComponent ],
+      imports: [
+        HttpClientTestingModule,
+      ]
     })
     .compileComponents();
   });

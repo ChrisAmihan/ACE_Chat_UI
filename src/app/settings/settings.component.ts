@@ -24,7 +24,6 @@ export class SettingsComponent implements OnInit {
 
   update(){
     this.user2.userid=Number(this.cookie.get("userid"));
-    console.log(this.user2)
     this.userService.updateAccount(this.user2).subscribe()
   }
 }
