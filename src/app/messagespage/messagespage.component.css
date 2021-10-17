@@ -12,10 +12,6 @@
     min-height: 500px;
 }
 
-.message-box {
-    background-color: white;
-}
-
 .container-fluid{
     background-color:#50026E;
     min-width: auto;
