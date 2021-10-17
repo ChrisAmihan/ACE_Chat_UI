@@ -22,6 +22,7 @@ import { NewmessageComponent } from './newmessage/newmessage.component';
 import { NewmessagepageComponent } from './newmessagepage/newmessagepage.component';
 import { AllfriendsComponent } from './allfriends/allfriends.component';
 import { PendingfriendsComponent } from './pendingfriends/pendingfriends.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { PendingfriendsComponent } from './pendingfriends/pendingfriends.compone
     NewmessagepageComponent,
     AllfriendsComponent,
     PendingfriendsComponent,
+    AboutusComponent,
     
   ],
   imports: [

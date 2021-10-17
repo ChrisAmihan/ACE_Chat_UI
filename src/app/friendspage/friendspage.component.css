@@ -47,5 +47,26 @@
 }
 
 #all-users-tab{
-    color:#50026E;
+    color:white;
+    background-color: #7C07A9;
+}
+
+#pending-friends-tab{
+    color:white;
+    background-color: #7C07A9;
+}
+
+#my-friends-tab{
+    color:white;
+    background-color: #7C07A9;
+}
+
+.tab{
+    padding-right:1rem;
+    padding-top:1px;
+    border-style:solid;
+}
+
+.col{
+    margin:auto;
 }

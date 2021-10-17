@@ -1,7 +1,46 @@
+.new-chat-div{
+    border-style:solid;
+    color:white;
+    text-align:center;
+    border-bottom:5px;
+}
+
+.create-new-chat{
+    color:white;
+    text-decoration: none;
+}
+
+.chat-search-div{
+    border-style:solid;
+    color:white;
+    text-align:center;
+}
+
+.search-box-div{
+    
+}
+
+#chat-search-box{
+        margin: 0 auto;
+        display: block;
+}
+
 #scroll {
     height: 350px;
     width: 100%;
     overflow: auto;
-    border: 8px solid #65247F;
-    padding: 3%
+    border: 8px solid white;
+    padding: 5%;
+    border-width: 3px;
 }
+
+.chat-name{
+    color:white;
+    text-decoration:none;
+}
+
+.button{
+    background-color:black;
+    color:white;
+}
+

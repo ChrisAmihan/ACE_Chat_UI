@@ -1,20 +1,25 @@
-<a id="new-chat-link" routerLink="/newmessage">
-    <span>New Chat</span>
-</a>
+<div class="new-chat-div">
+    <a id="new-chat-link" class="create-new-chat" routerLink="/newmessage"><span>Create New Chat</span></a>
+</div>
 <!--add some kind of popup window to make a new message-->
 
 <div>
-    <label for="chat-Search">Search Chats</label>
-    <input id="chat-search-box" #chatSearch type="text" (input)="chatsearch(chatSearch.value)">
-
+    <div class="chat-search-div">
+        <label for="chat-Search">Search Chats</label>
+    </div>
+    <div class="search-box-div">
+        <input id="chat-search-box" #chatSearch type="text" (input)="chatsearch(chatSearch.value)">
+    </div>
     <div id=scroll>
         <div>
             <ul *ngFor="let chat of chatarr">
-                <a  id="chat-{{chat.chatid}}" routerLink="/messages/{{chat.chatid}}">
-                    <span>{{chat.groupname}}</span>
-                </a>
-                <button id="mute-button-{{chat.chatid}}" (click)="mute(chat)"> Mute </button>
-                <button id="delete-button-{{chat.chatid}}" (click)="delete(chat.chatid)"> Delete </button>
+                <div class="chat-name-div">
+                    <a id="chat-{{chat.chatid}}" class="chat-name" routerLink="/messages/{{chat.chatid}}"><span>{{chat.groupname}}</span></a>
+                </div>
+                <div class="button-div">
+                    <button id="mute-button-{{chat.chatid}}" class="button" (click)="mute(chat)"> Mute </button>
+                    <button id="delete-button-{{chat.chatid}}" class="button" (click)="delete(chat.chatid)"> Delete </button>
+                </div>
             </ul>
         </div>
     </div>
