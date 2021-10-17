@@ -1,11 +1,11 @@
 .main-content {
-    background-color: rgb(163, 155, 155);
+    background-color:#65247F;
     margin: 1em 0px;
-    border-radius: 0.3rem;
-    box-shadow: steelblue;
-    padding: 16px;
-    border-radius: 4px;
-    min-height: 750px;
+    border-style:ridge;
+    padding: 20px;
+    border-radius: 5px;
+    min-height:500px;
+    border-width: 5px;
 }
 
 .nested-container {
@@ -15,4 +15,12 @@
 
 .message-box {
     background-color: white;
+}
+
+.container-fluid{
+    background-color:#50026E;
+    min-width: auto;
+    min-height:auto;
+    width: auto;
+    height: auto;
 }

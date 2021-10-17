@@ -12,25 +12,33 @@
 }
 
 .card {
-    background-color: dodgerblue;
+    background-color: #65247F;
     color: black;
-    min-height: 50%;
-    /*replace this it in width: 100%*/
-    width: 50%;
+    min-height: 50px;
+    width: 100%;
     float: right;
+    border-style:solid;
+    border-width: 5px;
+    border-color: white;
+    color:white;
 }
 
 .card-title {
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
-    font-weight: bold;
+    font-weight:normal;
     padding-top: 10px;
 }
 
-.card-desc {
+.button-attributes {
     padding: 10px;
-    text-align: left;
-    font-size: 9px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.button{
+    background-color:black;
+    color:white;
 }
 
 
@@ -38,16 +46,26 @@
 
 .card-image {
     display: inside;
-    max-width: 350px;
+    max-width: 500px;
     max-height: 300px;
+    margin:auto;
 }
 
 
 /*-------------*/
 
 div.card-image img {
-    width: 50%;
+    max-width:100px;
+    max-height:100px;
     height: auto;
+}
+
+.pic-container{
+    display: inside;
+    max-width:100px;
+    max-height:100px;
+    height: auto;
+    margin:auto;
 }
 
 

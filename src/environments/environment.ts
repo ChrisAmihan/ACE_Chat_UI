@@ -5,36 +5,36 @@
 export const environment = {
   production: false,
   //user
-  login: 'http://localhost:8080/user/login',
-  newAccount:'http://localhost:8080/user/newaccount',
-  updateAccount:'http://localhost:8080/user/updateaccount',
-  searchUsers:'http://localhost:8080/user/searchusers',
-  getallUsers:'http://localhost:8080/user/getall',
-  getoneUser:'http://localhost:8080/user/getone',
+  login:'http://54.163.196.222:8088/AceChat/user/login',
+  newAccount:'http://54.163.196.222:8088/AceChat/user/newaccount',
+  updateAccount:'http://54.163.196.222:8088/AceChat/user/updateaccount',
+  searchUsers:'http://54.163.196.222:8088/AceChat/user/searchusers',
+  getallUsers:'http://54.163.196.222:8088/AceChat/user/getall',
+  getoneUser:'http://54.163.196.222:8088/AceChat/user/getone',
 
   //friend
-  friendRequest:'http://localhost:8080/friend/request',
-  requestUpdate:'http://localhost:8080/friend/requestupdate',
-  deleteFriend:'http://localhost:8080/friend/deletefriend',
-  getAllFriends:'http://localhost:8080/friend/getall',
+  friendRequest:'http://54.163.196.222:8088/AceChat/friend/request',
+  requestUpdate:'http://54.163.196.222:8088/AceChat/friend/requestupdate',
+  deleteFriend:'http://54.163.196.222:8088/AceChat/friend/deletefriend',
+  getAllFriends:'http://54.163.196.222:8088/AceChat/friend/getall',
 
   //chat
-  newChat:'http://localhost:8080/chat/newchat',
-  deleteChat:'http://localhost:8080/chat/deletechat',
-  muteChat:'http://localhost:8080/chat/mutestatus',
-  getAllChats:'http://localhost:8080/chat/getallchats',
-  searchChats:'http://localhost:8080/chat/searchchats',
-  getGroups:'http://localhost:8080/chat/getgroupname',
-  getone:'http://localhost:8080/chat/getone',
+  newChat:'http://54.163.196.222:8088/AceChat/chat/newchat',
+  deleteChat:'http://54.163.196.222:8088/AceChat/chat/deletechat',
+  muteChat:'http://54.163.196.222:8088/AceChat/chat/mutestatus',
+  getAllChats:'http://54.163.196.222:8088/AceChat/chat/getallchats',
+  searchChats:'http://54.163.196.222:8088/AceChat/chat/searchchats',
+  getGroups:'http://54.163.196.222:8088/AceChat/chat/getgroupname',
+  getone:'http://54.163.196.222:8088/AceChat/chat/getone',
 
   //chatlog
-  message:'http://localhost:8080/chatlog/newmessage',
-  getChats:'http://localhost:8080/chatlog/getallchatlogs',
+  message:'http://54.163.196.222:8088/AceChat/chatlog/newmessage',
+  getChats:'http://54.163.196.222:8088/AceChat/chatlog/getallchatlogs',
 
   //block
-  block:'http://localhost:8080/block/block',
-  unblock:'http://localhost:8080/block/unblock',
-  getblock:'http://localhost:8080/block/getblocks'
+  block:'http://54.163.196.222:8088/AceChat/block/block',
+  unblock:'http://54.163.196.222:8088/AceChat/block/unblock',
+  getblock:'http://54.163.196.222:8088/AceChat/block/getblocks'
 };
 
 /*
