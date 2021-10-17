@@ -1,0 +1,16 @@
+.main-content{
+    background-color:rgb(163, 155, 155);
+    margin: 1em 0px;
+    border-radius: 0.3rem;
+    box-shadow: steelblue;
+    padding: 16px;
+    border-radius: 4px;
+    min-height:750px;
+}
+.nested-container{
+    background-color: white;
+    min-height:500px;
+}
+.message-box{
+    background-color: white;
+}

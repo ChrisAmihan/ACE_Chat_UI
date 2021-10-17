@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   //user
-  login: 'http://localhost:8080/user/login',
+  login:'http://localhost:8080/user/login',
   newAccount:'http://localhost:8080/user/newaccount',
   updateAccount:'http://localhost:8080/user/updateaccount',
   searchUsers:'http://localhost:8080/user/searchusers',
