@@ -2,16 +2,6 @@
     height: 450px;
     width: 100%;
     overflow: auto;
-    border: 4px solid #65247F;
+    border: 4px solid steelblue;
     padding: 3%
-}
-
-.chat-time{
-    color:white;
-    font-size: 20px;
-}
-
-.chat-message{
-    color:white;
-    font-size: 20px;
 }

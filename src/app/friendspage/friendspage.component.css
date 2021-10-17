@@ -1,10 +1,11 @@
 .main-content {
-    background-color:#65247F;
+    background-color: rgb(163, 155, 155);
     margin: 1em 0px;
-    border-style:ridge;
-    padding: 20px;
-    border-radius: 5px;
-    min-height:500px;
+    border-radius: 0.3rem;
+    box-shadow: steelblue;
+    padding: 16px;
+    border-radius: 4px;
+    min-height: 750px;
 }
 
 .nested-container {
@@ -22,51 +23,10 @@
     padding: 10px;
     border-radius: 4px;
     padding-top: 10px;
-    box-shadow: #65247F;
+    box-shadow: steelblue;
 }
 
 #spanDiv {
     justify-content: center;
     align-items: center;
-}
-
-.container-fluid{
-    background-color:#50026E;
-    min-width: auto;
-    min-height:auto;
-    width: auto;
-    height: auto;
-}
-
-#friends-list{
-    height: 450px;
-    width: 75%;
-    overflow: auto;
-    border: 4px solid #65247F;
-    padding: 3%
-}
-
-#all-users-tab{
-    color:white;
-    background-color: #7C07A9;
-}
-
-#pending-friends-tab{
-    color:white;
-    background-color: #7C07A9;
-}
-
-#my-friends-tab{
-    color:white;
-    background-color: #7C07A9;
-}
-
-.tab{
-    padding-right:1rem;
-    padding-top:1px;
-    border-style:solid;
-}
-
-.col{
-    margin:auto;
 }

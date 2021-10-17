@@ -1,14 +1,12 @@
 <div class="card-container">
     <div class="float-layout">
         <div class="card-image">
-            <div class="pic-container">
-                <img src="{{friend.requesterid.profilepic}}">
-            </div>
+            <img src="{{friend.requesterid.profilepic}}">
             <div class="card">
                 <div class="card-title">{{friend.requesterid.name}}</div>
-                <div class="button-attributes">
-                    <input id="block-{{friend.requesterid.name}}-button" class="button" type="button" value="Block" (click)="blockUser()">
-                </div>
+                <div class="card-desc"> <input type="button" value="Block" (click)="blockUser()"></div>
+
+
             </div>
         </div>
     </div>

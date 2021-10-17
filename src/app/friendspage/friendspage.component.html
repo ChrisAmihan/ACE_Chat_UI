@@ -1,39 +1,17 @@
-<div class="container-fluid">
+<div class="container">
     <div class="row">
         <div class="col-2">
+
+        </div>
+        <div class="col -2">
+            <span id="allUser" class=tab (click)="displayAllUsers()">All</span>
+            <span id="pendFriend" class=tab (click)="findPendingFriends()">Pending</span>
+            <span id="approveFriend" class=tab (click)="findApprovedFriends()">Approved</span>
+        </div>
+
     </div>
-    <!--<ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Separated link</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>-->
-      
-    <div class="col">
-        <span id="all-users-tab" class="tab" (click)="displayAllUsers()">All Users</span>
-        <span id="pending-friends-tab" class="tab" (click)="findPendingFriends()">Pending Friend Requests</span>
-        <span id="my-friends-tab" class="tab" (click)="findApprovedFriends()">My Friends</span>
-    </div>
-
-
-</div>
-
     <div id="spanDiv">
+
 
     </div>
     <div class="container-fluid">
@@ -43,9 +21,8 @@
                     <app-chat-list></app-chat-list>
                 </div>
             </div>
-            
-            <div class="col-8 main-content" id="friends-list">
-                
+            <div class="col-8 main-content" id="friendslist">
+
                 <div *ngIf="all">
                     <app-friends *ngFor="let u of allUsers" [user]="u"></app-friends>
                 </div>
@@ -54,17 +31,11 @@
                 </div>
                 <div *ngIf="pending">
                     <app-pendingfriends *ngFor="let p of pendingFriends" [friend]="p"></app-pendingfriends>
-            </div>
-        </div>
-        
-        
-            
+                </div>
 
+            </div>
             <div class="col-1 rightpane m-3">
 
             </div>
-            
-
         </div>
     </div>
-    

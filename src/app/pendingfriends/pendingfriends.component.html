@@ -1,14 +1,11 @@
 <div class="card-container">
     <div class="float-layout">
         <div class="card-image">
-            <div class="pic-container">
-                <img id="pending-profile-pic" src="{{friend.requesterid.profilepic}}">
-            </div>
+            <img src="{{friend.requesterid.profilepic}}">
             <div class="card">
                 <div class="card-title">{{friend.requesterid.name}}</div>
-                <div class="button-attributes">
-                    <input class="button" type="button" value="Accept" (click)="acceptFriendRequest()">
-                </div>
+                <div class="card-desc">
+                    <input type="button" value="Accept" (click)="acceptFriendRequest()"></div>
             </div>
         </div>
     </div>

@@ -12,33 +12,25 @@
 }
 
 .card {
-    background-color: #65247F;
+    background-color: dodgerblue;
     color: black;
-    min-height: 50px;
-    width: 100%;
+    min-height: 50%;
+    /*replace this it in width: 100%*/
+    width: 50%;
     float: right;
-    border-style:solid;
-    border-width: 5px;
-    border-color: white;
-    color:white;
 }
 
 .card-title {
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
-    font-weight:normal;
+    font-weight: bold;
     padding-top: 10px;
 }
 
-.button-attributes {
+.card-desc {
     padding: 10px;
-    text-align: center;
-    font-size: 15px;
-}
-
-.button{
-    background-color:black;
-    color:white;
+    text-align: left;
+    font-size: 9px;
 }
 
 
@@ -46,26 +38,16 @@
 
 .card-image {
     display: inside;
-    max-width: 500px;
+    max-width: 350px;
     max-height: 300px;
-    margin:auto;
 }
 
 
 /*-------------*/
 
 div.card-image img {
-    max-width:100px;
-    max-height:100px;
+    width: 50%;
     height: auto;
-}
-
-.pic-container{
-    display: inside;
-    max-width:100px;
-    max-height:100px;
-    height: auto;
-    margin:auto;
 }
 
 
