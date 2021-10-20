@@ -1,12 +1,11 @@
-
-    <div class="login-container col-4">
+<div class="login-container col-4">
     <form id="login_form">
         <div method="POST" action="">
             <div>
-                <input id="username-box" [(ngModel)]="user.username" type="text" placeholder="Username" name="username" />
+                <input id="username-box" [(ngModel)]="user.username" type="text" placeholder="Username" name="username" required/>
             </div>
             <div>
-                <input id="password-box" [(ngModel)]="user.password" type="password" placeholder="Password" required name="Password" />
+                <input id="password-box" [(ngModel)]="user.password" type="password" placeholder="Password" required name="Password" required/>
             </div>
             <input id="login-button" class="button" (click)="login()" type="submit" value="Login Button" required/>
         </div>
@@ -14,4 +13,4 @@
     <nav>
         <a id="create-account-link" routerLink="/new-user"> Create New Account </a>
     </nav>
-    </div>
+</div>

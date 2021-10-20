@@ -1,3 +1,15 @@
-.fullscreen{
-    background-color:rgba(0, 0, 0, 0.849);
+.fullscreen {
+    background-color: rgba(0, 0, 0, 0.849);
+    margin: 0px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+html,
+body {
+    margin: 0px;
+    height: 100%;
 }

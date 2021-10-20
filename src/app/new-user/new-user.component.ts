@@ -20,9 +20,11 @@ export class NewUserComponent implements OnInit {
   user:User = new User("","",0,"","");
   
   newAccount(){
+    if(this.user.username!=""&&this.user.password !=""&&this.user.name){
     let user = new User(this.user.username,this.user.password,0,this.user.name,this.user.profilepic);
     this.userService.newAccount(user).subscribe(res =>{
       this.route.navigate(['/login']);
     })
+  }
   }
 }

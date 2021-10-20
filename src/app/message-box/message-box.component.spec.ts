@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MessageBoxComponent } from './message-box.component';
 
-describe('MessageBoxComponent', () => {
+xdescribe('MessageBoxComponent', () => {
   let component: MessageBoxComponent;
   let fixture: ComponentFixture<MessageBoxComponent>;
 

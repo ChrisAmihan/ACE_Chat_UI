@@ -26,9 +26,7 @@ export class ChatListComponent implements OnInit {
 
   delete(id:number){
       let chat = new Chat(id,this.user,"","")
-      this.chatService.deleteChat(chat).subscribe((data)=>{
-         window.location.replace(this.route.url);
-      });  
+      this.chatService.deleteChat(chat).subscribe();  
   }
 
   chatsearch(term:String):void{

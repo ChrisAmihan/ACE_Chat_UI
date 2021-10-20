@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SettingspageComponent } from './settingspage.component';
 
-describe('SettingspageComponent', () => {
+xdescribe('SettingspageComponent', () => {
   let component: SettingspageComponent;
   let fixture: ComponentFixture<SettingspageComponent>;
 

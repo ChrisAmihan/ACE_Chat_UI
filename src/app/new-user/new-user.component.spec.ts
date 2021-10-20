@@ -17,7 +17,7 @@ describe('NewUserComponent', () => {
         {
            provide: Router,
            useValue: {
-              url: '/friends'
+              url: '/login'
            }
         } 
       ]
@@ -42,6 +42,6 @@ describe('NewUserComponent', () => {
     component.user.name='test';
     component.user.password='test';
     component.newAccount();
-    expect(router.url).toBe('/friends')
+    expect(router.url).toBe('/login')
   });
 });
