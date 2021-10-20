@@ -1,27 +1,31 @@
-# AceChatUI
+# Ace Chat
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
+## Project Description
+ACE Chat is an app used to communicate with friends. New users will need to create accounts if they do not already have one. Once a user is logged in the user will have the ability to add friends, delete friends, create a new chat, or open an existing chat. Users will also be able to upload a profile pic, block friends, and mute chats.
 
-## Development server
+## Technologies Used
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Java 8
+* Spring
+* Angular
+* Jenkins
+* TypeScript
+* Selenium/Webdriver
+* EC2
+* JUnit
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Features
+* Login
+* New Account
+* Create a new chat
+* Send a message
+* Delete a chat
+* Mute a Chat
+* Search chats
+* Notifications
+* Block user
+* Add Friend
+* Remove Friend
+* Search users
+* Update credentials
